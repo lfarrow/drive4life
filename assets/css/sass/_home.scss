@@ -1,0 +1,53 @@
+.home {
+	.hero {
+		background-image: url('../img/backgrounds/car-reverse.jpg');
+		background-position: 55% 65%;
+		margin-bottom: 10px;
+		.caption {
+			top: 33%;
+			right: 10px;
+		}		
+		h1 {
+			.red {
+				color: $brightRed;
+			}
+		}
+	}
+	.row {
+		margin-bottom: 10px;
+	}
+	.colour-box {
+		height: 170px;
+		text-align: center;
+		padding: 10px 0;
+		color: #fff;
+		font-size: 0.9rem;
+		&.dark-blue {
+			background-color: $darkBlue;
+		}
+		&.red {
+			background-color: $red;
+		}
+		&.purple {
+			background-color: $purple;
+			img {
+				margin-right: 5px;
+				vertical-align: middle;
+			}
+		}
+		&.orange {
+			background-color: $orange;
+		}
+		&.blue {
+			background-color: $blue;
+		}
+		h2 {
+			margin-bottom: 15px;
+			font-size: 1.05rem;
+		}
+		img {
+			margin: 5px 0;
+			display: inline-block;
+		}
+	}
+}
