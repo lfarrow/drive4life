@@ -17,9 +17,9 @@
 		margin-bottom: 10px;
 	}
 	.colour-box {
-		height: 170px;
+		height: 200px;
 		text-align: center;
-		padding: 10px 0;
+		padding: 20px 0;
 		color: #fff;
 		font-size: 0.9rem;
 		&.dark-blue {
@@ -30,6 +30,8 @@
 		}
 		&.purple {
 			background-color: $purple;
+			height: 170px;
+			padding: 10px 0;
 			img {
 				margin-right: 5px;
 				vertical-align: middle;
@@ -41,13 +43,16 @@
 		&.blue {
 			background-color: $blue;
 		}
+		img {
+			margin-bottom: 5px;
+			display: inline-block;
+		}
 		h2 {
 			margin-bottom: 15px;
 			font-size: 1.05rem;
 		}
-		img {
-			margin: 5px 0;
-			display: inline-block;
+		.caption {
+			margin-bottom: 15px;
 		}
 	}
 }

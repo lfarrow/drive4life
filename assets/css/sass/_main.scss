@@ -53,7 +53,8 @@ header {
 		.menu-icon {
 			font-size: 0;
 		    line-height: 0;
-			background-image: url("../img/icons/menu.png");
+			background-image: url("../img/icons/menu.svg");
+			background-size: 35px 35px;
 			background-position: center center;
 			background-repeat: no-repeat;
 			height: 75px;
@@ -66,7 +67,7 @@ body.show-menu {
 	.menu-icon-container {
 		background-color: $darkGreen;
 		.menu-icon {
-			background-image: url('../img/icons/menu-close.png');
+			background-image: url('../img/icons/menu-close.svg');
 		}
 	}
 }
@@ -132,7 +133,7 @@ nav {
 
 .button {
 	padding: 0.3em 1em;
-	border-radius: 5px;
+	border-radius: 2px;
 	color: #fff;
 	display: inline-block;
 	background-color: $green;

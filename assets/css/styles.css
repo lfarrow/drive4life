@@ -663,7 +663,8 @@ header {
     header .menu-icon-container .menu-icon {
       font-size: 0;
       line-height: 0;
-      background-image: url("../img/icons/menu.png");
+      background-image: url("../img/icons/menu.svg");
+      background-size: 35px 35px;
       background-position: center center;
       background-repeat: no-repeat;
       height: 75px;
@@ -672,7 +673,7 @@ header {
 body.show-menu .menu-icon-container {
   background-color: #03a734; }
   body.show-menu .menu-icon-container .menu-icon {
-    background-image: url("../img/icons/menu-close.png"); }
+    background-image: url("../img/icons/menu-close.svg"); }
 
 nav {
   z-index: 99;
@@ -721,7 +722,7 @@ nav {
 
 .button {
   padding: 0.3em 1em;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #fff;
   display: inline-block;
   background-color: #03C03C;
@@ -746,9 +747,9 @@ nav {
   margin-bottom: 10px; }
 
 .home .colour-box {
-  height: 170px;
+  height: 200px;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
   color: #fff;
   font-size: 0.9rem; }
   .home .colour-box.dark-blue {
@@ -756,7 +757,9 @@ nav {
   .home .colour-box.red {
     background-color: #FF6961; }
   .home .colour-box.purple {
-    background-color: #966FD6; }
+    background-color: #966FD6;
+    height: 170px;
+    padding: 10px 0; }
     .home .colour-box.purple img {
       margin-right: 5px;
       vertical-align: middle; }
@@ -764,9 +767,11 @@ nav {
     background-color: #FF9E14; }
   .home .colour-box.blue {
     background-color: #3498DB; }
+  .home .colour-box img {
+    margin-bottom: 5px;
+    display: inline-block; }
   .home .colour-box h2 {
     margin-bottom: 15px;
     font-size: 1.05rem; }
-  .home .colour-box img {
-    margin: 5px 0;
-    display: inline-block; }
+  .home .colour-box .caption {
+    margin-bottom: 15px; }
