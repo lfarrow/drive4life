@@ -13,12 +13,10 @@
 			}
 		}
 	}
-	.row {
-		margin-bottom: 10px;
-	}
 	.colour-box {
 		height: 200px;
 		text-align: center;
+		margin-bottom: 10px;
 		padding: 20px 0;
 		color: #fff;
 		font-size: 0.9rem;
@@ -30,7 +28,7 @@
 		}
 		&.purple {
 			background-color: $purple;
-			height: 170px;
+			padding: 40px 0;
 			img {
 				margin-right: 5px;
 				vertical-align: middle;

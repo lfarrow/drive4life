@@ -1,0 +1,90 @@
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.home {
+		.clear-left {
+			clear:left;
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.hero .container {
+		height: 350px;
+		.caption {
+			position: relative;
+			font-size: 1.8rem;
+			h1 {
+				font-size: 3rem;
+			}
+		}
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.hero .container {
+		.caption {
+			font-size: 2.3rem;
+			h1 {
+				font-size: 3.5rem;
+			}
+		}
+	}
+	.inner-container {
+	    width: 1170px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	footer {
+		padding: 57px 15px;
+	}
+
+	body {
+		padding-top: 0;
+	}
+
+	header,
+	nav {
+		position: relative;
+	}
+
+	header .menu-icon-container {
+		display: none;
+	}
+
+	nav {
+		top: 0;
+		max-height: none!important;
+		ul {
+			font-size: 0;
+			li {				
+				display: inline-block;
+				font-size: 1rem;
+				a {
+					padding: 15px 25px;
+					border-left: 1px transparent solid;
+					border-right: 1px transparent solid;
+					&.active,
+					&:hover,
+					&:focus {
+						color: #fff;
+						background-color: darken($darkGreen, 3%);
+						border-left: 1px rgba(0, 0, 0, 0.04) solid;
+						border-right: 1px rgba(0, 0, 0, 0.04) solid;						
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+
+
+}

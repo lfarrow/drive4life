@@ -618,7 +618,7 @@ html {
 
 body {
   padding-top: 75px;
-  margin: 0 0 100px;
+  margin: 0 0 220px;
   /* bottom = footer height */ }
 
 footer {
@@ -627,10 +627,25 @@ footer {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100px;
   background-color: #555E69;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  padding: 15px 15px; }
+  footer h2 {
+    margin-bottom: 10px; }
+  footer .social-icons {
+    margin-bottom: 30px; }
+    footer .social-icons a {
+      opacity: 0.75;
+      margin: 0 10px;
+      display: inline-block; }
+      footer .social-icons a:hover, footer .social-icons a:focus {
+        opacity: 1; }
+  footer .contact p {
+    margin-bottom: 3px; }
+    footer .contact p img {
+      margin-right: 5px;
+      vertical-align: middle; }
 
 header,
 nav {
@@ -724,7 +739,6 @@ nav {
   padding: 0.3em 1em;
   border-radius: 2px;
   color: #fff;
-  display: inline-block;
   background-color: #03C03C;
   font-size: 1rem; }
   .button img {
@@ -743,12 +757,10 @@ nav {
   .home .hero h1 .red {
     color: #EB1D24; }
 
-.home .row {
-  margin-bottom: 10px; }
-
 .home .colour-box {
   height: 200px;
   text-align: center;
+  margin-bottom: 10px;
   padding: 20px 0;
   color: #fff;
   font-size: 0.9rem; }
@@ -758,7 +770,7 @@ nav {
     background-color: #FF6961; }
   .home .colour-box.purple {
     background-color: #966FD6;
-    height: 170px; }
+    padding: 40px 0; }
     .home .colour-box.purple img {
       margin-right: 5px;
       vertical-align: middle; }
@@ -774,3 +786,59 @@ nav {
     font-size: 1.05rem; }
   .home .colour-box .caption {
     margin-bottom: 15px; }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .home .clear-left {
+    clear: left; } }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .hero .container {
+    height: 350px; }
+    .hero .container .caption {
+      position: relative;
+      font-size: 1.8rem; }
+      .hero .container .caption h1 {
+        font-size: 3rem; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .hero .container .caption {
+    font-size: 2.3rem; }
+    .hero .container .caption h1 {
+      font-size: 3.5rem; }
+  .inner-container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px; }
+  footer {
+    padding: 57px 15px; }
+  body {
+    padding-top: 0; }
+  header,
+  nav {
+    position: relative; }
+  header .menu-icon-container {
+    display: none; }
+  nav {
+    top: 0;
+    max-height: none !important; }
+    nav ul {
+      font-size: 0; }
+      nav ul li {
+        display: inline-block;
+        font-size: 1rem; }
+        nav ul li a {
+          padding: 15px 25px;
+          border-left: 1px transparent solid;
+          border-right: 1px transparent solid; }
+          nav ul li a.active, nav ul li a:hover, nav ul li a:focus {
+            color: #fff;
+            background-color: #03982f;
+            border-left: 1px rgba(0, 0, 0, 0.04) solid;
+            border-right: 1px rgba(0, 0, 0, 0.04) solid; } }
+
+/* Large Devices, Wide Screens */
