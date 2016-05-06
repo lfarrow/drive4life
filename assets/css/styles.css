@@ -660,7 +660,7 @@ header {
   right: 0;
   width: 100%;
   height: 75px;
-  padding: 10px;
+  padding: 10px 0;
   background-color: #03C03C; }
   header .logo {
     display: inline-block; }
@@ -707,7 +707,9 @@ nav {
       height: 100%;
       width: 100%;
       display: block;
-      padding: 15px 5px; }
+      padding: 15px 5px;
+      border-left: 0px transparent solid;
+      border-right: 0px transparent solid; }
       nav ul li a.active, nav ul li a:hover, nav ul li a:focus {
         background-color: #fff;
         color: #555E69; }
@@ -757,35 +759,51 @@ nav {
   .home .hero h1 .red {
     color: #EB1D24; }
 
-.home .colour-box {
+.home .colour-boxes .colour-box {
   height: 200px;
   text-align: center;
   margin-bottom: 10px;
   padding: 20px 0;
   color: #fff;
   font-size: 0.9rem; }
-  .home .colour-box.dark-blue {
+  .home .colour-boxes .colour-box.dark-blue {
     background-color: #0070B8; }
-  .home .colour-box.red {
+  .home .colour-boxes .colour-box.red {
     background-color: #FF6961; }
-  .home .colour-box.purple {
+  .home .colour-boxes .colour-box.purple {
     background-color: #966FD6;
     padding: 40px 0; }
-    .home .colour-box.purple img {
+    .home .colour-boxes .colour-box.purple img {
       margin-right: 5px;
       vertical-align: middle; }
-  .home .colour-box.orange {
+  .home .colour-boxes .colour-box.orange {
     background-color: #FF9E14; }
-  .home .colour-box.blue {
+  .home .colour-boxes .colour-box.blue {
     background-color: #3498DB; }
-  .home .colour-box img {
+  .home .colour-boxes .colour-box img {
     margin-bottom: 5px;
     display: inline-block; }
-  .home .colour-box h2 {
+  .home .colour-boxes .colour-box h2 {
     margin-bottom: 15px;
     font-size: 1.05rem; }
-  .home .colour-box .caption {
+  .home .colour-boxes .colour-box .caption {
     margin-bottom: 15px; }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .home .colour-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .home .colour-boxes .col-md-12 {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
@@ -795,7 +813,7 @@ nav {
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .hero .container {
-    height: 350px; }
+    height: 460px; }
     .hero .container .caption {
       position: relative;
       font-size: 1.8rem; }
@@ -804,10 +822,12 @@ nav {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  .hero .container .caption {
-    font-size: 2.3rem; }
-    .hero .container .caption h1 {
-      font-size: 3.5rem; }
+  .hero .container {
+    height: 610px; }
+    .hero .container .caption {
+      font-size: 2.3rem; }
+      .hero .container .caption h1 {
+        font-size: 3.5rem; }
   .inner-container {
     width: 1170px;
     margin-right: auto;
