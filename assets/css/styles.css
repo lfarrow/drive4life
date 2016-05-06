@@ -684,6 +684,13 @@ header {
       background-repeat: no-repeat;
       height: 75px;
       width: 75px; }
+    header .menu-icon-container .menu-icon:before {
+      /* Hidden element to pre-load close image- avoids flickering when hamburger pressed */
+      content: url("../img/icons/menu-close.svg");
+      position: absolute;
+      width: 0;
+      height: 0;
+      visibility: hidden; }
 
 body.show-menu .menu-icon-container {
   background-color: #03a734; }
