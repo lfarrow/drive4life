@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0;
-  font: 16px/1 sans-serif;
+  font: 16px/1.2 sans-serif;
   font-family: 'Open Sans', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
@@ -618,8 +618,8 @@ html {
 
 body {
   padding-top: 75px;
-  margin: 0 0 220px;
-  /* bottom = footer height */ }
+  margin: 0 0 240px;
+  /* bottom = footer height + 20px (margin) */ }
 
 footer {
   position: absolute;
@@ -796,6 +796,29 @@ nav {
   .home .colour-boxes .colour-box .caption {
     margin-bottom: 15px; }
 
+.home .about {
+  background-image: url("../img/backgrounds/toy-car-extended-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 100%;
+  color: #fff;
+  padding: 30px 25% 70px 20px; }
+  .home .about .caption {
+    padding: 20px;
+    background-color: #02962e; }
+    .home .about .caption h2 {
+      font-size: 2.3rem;
+      margin-bottom: 15px; }
+    .home .about .caption ul {
+      padding-left: 20px; }
+      .home .about .caption ul li {
+        display: list-item; }
+
+/* Custom width */
+@media only screen and (min-width: 505px) {
+  .home .about {
+    padding: 80px 40% 120px 20px; } }
+
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   .home .colour-boxes {
@@ -810,7 +833,9 @@ nav {
       -webkit-box-ordinal-group: 2;
       -webkit-order: 1;
       -ms-flex-order: 1;
-      order: 1; } }
+      order: 1; }
+  .home .about {
+    padding: 80px 50% 120px 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
