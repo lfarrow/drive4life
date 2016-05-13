@@ -55,12 +55,9 @@
 		}		
 	}
 	.about {
-		background-image: url('../img/backgrounds/toy-car-extended-2.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: 40% 100%;
-		color: #fff;
-		padding: 30px 25% 70px 20px;		
+		padding: 0;
+		background-image: none;
+		color: #fff;	
 		.caption {			
 			padding: 20px;
 			background-color: $darkerGreen;
@@ -72,6 +69,7 @@
 				padding-left: 20px;
 				li {
 					display: list-item;
+					margin-bottom: 15px;
 				}
 			}
 		}
@@ -79,10 +77,14 @@
 }
 
 /* Custom width */
-@media only screen and (min-width : 505px) {
+@media only screen and (min-width : 690px) {
 .home {
 	.about {
 		padding: 80px 40% 120px 20px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 56% 100%;
+		background-image: url('../img/backgrounds/toy-car-extended-2.jpg');
 	}
 }
 }
