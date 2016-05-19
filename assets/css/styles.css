@@ -650,7 +650,6 @@ footer {
 header,
 nav {
   position: fixed;
-  transform: translateZ(0);
   -webkit-transform: translateZ(0);
   -webkit-overflow-scrolling: touch; }
 
@@ -694,8 +693,6 @@ header {
       visibility: hidden; }
 
 body > div, body > main, body > footer {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
   -webkit-filter: blur(0px);
   filter: blur(0px);
   transition: 0.2s filter linear;
