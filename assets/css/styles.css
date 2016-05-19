@@ -708,8 +708,8 @@ body.show-menu .menu-icon-container {
     background-image: url("../img/icons/menu-close.svg"); }
 
 body.show-menu > div, body.show-menu > main, body.show-menu > footer {
-  -webkit-filter: blur(5px);
-  filter: blur(5px); }
+  -webkit-filter: blur(2px);
+  filter: blur(2px); }
 
 nav {
   z-index: 99;
