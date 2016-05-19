@@ -47,6 +47,10 @@ nav {
 	position: fixed;
 	-webkit-transform: translateZ(0)translate3d(0, 0, 0);
 	transform: translateZ(0)translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 	-webkit-overflow-scrolling: touch;
 }
 
@@ -99,6 +103,10 @@ header {
 body > div, body > main, body > footer {
 	-webkit-transform: translateZ(0)translate3d(0, 0, 0);
 	transform: translateZ(0)translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 	
 	-webkit-filter: blur(0px);
 	filter: blur(0px);
