@@ -95,12 +95,28 @@ header {
 	}
 }
 
+body > div, body > main, body > footer {
+	-webkit-filter: blur(0px);
+	filter: blur(0px);
+
+	transition: 0.2s filter linear;
+	-webkit-transition: 0.2s -webkit-filter linear;
+	-moz-transition: 0.2s -moz-filter linear;
+	-moz-transition: 0.2s filter linear;
+	-ms-transition: 0.2s -ms-filter linear;
+	-o-transition: 0.2s -o-filter linear;
+}
+
 body.show-menu {
 	.menu-icon-container {
 		background-color: $darkGreen;
 		.menu-icon {
 			background-image: url('../img/icons/menu-close.svg');
 		}
+	}
+	> div, > main, > footer {
+		-webkit-filter: blur(5px);
+	    filter: blur(5px);
 	}
 }
 

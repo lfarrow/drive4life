@@ -46,6 +46,13 @@
 
 	body {
 		padding-top: 0;
+		&.show-menu {
+			> div, > main, > footer {
+				-webkit-filter: blur(0px);
+				filter: blur(0px);
+			}
+		}
+
 	}
 
 	header,
