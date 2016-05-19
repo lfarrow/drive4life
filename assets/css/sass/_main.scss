@@ -97,8 +97,8 @@ header {
 }
 
 body > div, body > main, body > footer {
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
+	-webkit-transform: translateZ(0)translate3d(0, 0, 0);
+	transform: translateZ(0)translate3d(0, 0, 0);
 	
 	-webkit-filter: blur(0px);
 	filter: blur(0px);
