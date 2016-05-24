@@ -22,5 +22,35 @@ document.onreadystatechange = function () {
 				calculateNavHeight();
 			}
 		};
+
+		if (document.forms["0"] != undefined) {
+			addInputListener(document.forms["0"].getElementsByTagName("input"));
+			addInputListener(document.forms["0"].getElementsByTagName("textarea"));			
+		}
+
+		function addInputListener(elements) {
+			if (elements != undefined) {
+				for(var i = 0; i < elements.length; i++) {
+					elements[i].addEventListener("input", onInputChange);
+				}
+			}
+		}
+
+		function onInputChange() {
+			var input = this;
+		    if (input.value.length > 0) {
+		    	addClassToElement(input, 'populated');
+		    } else {
+		    	removeClassFromElement(input, 'populated');
+		    }
+		};
+
+		function addClassToElement(element, className) {
+			element.classList.add(className);
+		}
+
+		function removeClassFromElement(element, className) {
+			element.classList.remove(className);
+		}
 	}
 }
