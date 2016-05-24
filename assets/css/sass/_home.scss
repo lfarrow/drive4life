@@ -2,55 +2,22 @@
 	.hero {
 		background-image: url('../img/backgrounds/car-reverse-2.jpg');
 		background-position: 55% 65%;
-		margin-bottom: 10px;
 		.caption {
 			top: 33%;
 			right: 10px;
-		}		
-		h1 {
-			.red {
-				color: $brightRed;
-			}
-		}
+		}			
 	}
 	.colour-boxes {
 		.colour-box {
 			height: 200px;
-			text-align: center;
-			margin-bottom: 10px;
-			padding: 20px 0;
-			color: #fff;
-			font-size: 0.9rem;
-			&.dark-blue {
-				background-color: $darkBlue;
-			}
-			&.red {
-				background-color: $red;
-			}
 			&.purple {
-				background-color: $purple;
 				padding: 40px 0;
 				img {
 					margin-right: 5px;
 					vertical-align: middle;
+					height: 24px;
+					max-width: 24px;
 				}
-			}
-			&.orange {
-				background-color: $orange;
-			}
-			&.blue {
-				background-color: $blue;
-			}
-			img {
-				margin-bottom: 5px;
-				display: inline-block;
-			}
-			h2 {
-				margin-bottom: 15px;
-				font-size: 1.05rem;
-			}
-			.caption {
-				margin-bottom: 15px;
 			}
 		}		
 	}
@@ -60,7 +27,7 @@
 		color: #fff;	
 		.caption {			
 			padding: 20px;
-			background-color: $darkerGreen;
+			background-color: $emerald;
 			h2 {
 				font-size: 2.3rem;
 				margin-bottom: 15px;

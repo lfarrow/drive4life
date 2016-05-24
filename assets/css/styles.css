@@ -612,6 +612,13 @@ img {
 .pull-left {
   float: left !important; }
 
+/*
+   __________________________________________________________________
+  |                                                                  |
+  |                            Structure                             |
+  |__________________________________________________________________|
+
+*/
 html {
   position: relative;
   min-height: 100%; }
@@ -743,15 +750,23 @@ nav {
       border-left: 0px transparent solid;
       border-right: 0px transparent solid; }
       nav ul li a.active, nav ul li a:hover, nav ul li a:focus {
-        background-color: #fff;
+        background-color: #f2f2f2;
         color: #555E69; }
 
+/*
+   __________________________________________________________________
+  |                                                                  |
+  |                          Common Styles                           |
+  |__________________________________________________________________|
+
+*/
 .hero {
   position: relative;
   width: 100%;
   min-height: 350px;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 10px; }
   .hero .caption {
     position: absolute;
     top: 33%;
@@ -781,45 +796,91 @@ nav {
   .button:hover {
     background-color: #03a734; }
 
-.home .hero {
-  background-image: url("../img/backgrounds/car-reverse-2.jpg");
-  background-position: 55% 65%;
-  margin-bottom: 10px; }
-  .home .hero .caption {
-    top: 33%;
-    right: 10px; }
-  .home .hero h1 .red {
-    color: #EB1D24; }
-
-.home .colour-boxes .colour-box {
-  height: 200px;
+.colour-boxes .colour-box {
   text-align: center;
   margin-bottom: 10px;
   padding: 20px 0;
   color: #fff;
   font-size: 0.9rem; }
-  .home .colour-boxes .colour-box.dark-blue {
+  .colour-boxes .colour-box > p > img {
+    height: 47px;
+    max-width: 47px;
+    margin-bottom: 5px;
+    display: inline-block; }
+  .colour-boxes .colour-box.dark-blue {
     background-color: #0070B8; }
-  .home .colour-boxes .colour-box.red {
+  .colour-boxes .colour-box.red {
     background-color: #FF6961; }
+  .colour-boxes .colour-box.purple {
+    background-color: #966FD6; }
+  .colour-boxes .colour-box.orange {
+    background-color: #FF9E14; }
+  .colour-boxes .colour-box.blue {
+    background-color: #3498DB; }
+  .colour-boxes .colour-box.emerald {
+    background-color: #2AB07C; }
+  .colour-boxes .colour-box h2 {
+    margin-bottom: 15px;
+    font-size: 1.05rem; }
+  .colour-boxes .colour-box .caption {
+    margin-bottom: 15px; }
+
+form {
+  margin: 0 auto; }
+  form .input-group {
+    padding: 0 40px; }
+    form .input-group label {
+      display: block;
+      position: relative; }
+      form .input-group label textarea {
+        resize: none;
+        overflow-y: auto; }
+      form .input-group label input, form .input-group label textarea {
+        font-family: inherit;
+        display: block;
+        border: none;
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 18px;
+        outline: none;
+        transition: all 0.2s ease-in-out; }
+        form .input-group label input ::placeholder, form .input-group label textarea ::placeholder {
+          transition: all 0.2s ease-in-out;
+          color: #999;
+          font: 18px Helvetica, Arial, sans-serif; }
+        form .input-group label input:focus, form .input-group label input.populated, form .input-group label textarea:focus, form .input-group label textarea.populated {
+          padding-top: 28px;
+          padding-bottom: 12px; }
+          form .input-group label input:focus ::placeholder, form .input-group label input.populated ::placeholder, form .input-group label textarea:focus ::placeholder, form .input-group label textarea.populated ::placeholder {
+            color: transparent; }
+          form .input-group label input:focus + span, form .input-group label input.populated + span, form .input-group label textarea:focus + span, form .input-group label textarea.populated + span {
+            opacity: 1;
+            top: 10px; }
+      form .input-group label span {
+        color: #2AB07C;
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        opacity: 0;
+        transition: all 0.2s ease-in-out; }
+
+.home .hero {
+  background-image: url("../img/backgrounds/car-reverse-2.jpg");
+  background-position: 55% 65%; }
+  .home .hero .caption {
+    top: 33%;
+    right: 10px; }
+
+.home .colour-boxes .colour-box {
+  height: 200px; }
   .home .colour-boxes .colour-box.purple {
-    background-color: #966FD6;
     padding: 40px 0; }
     .home .colour-boxes .colour-box.purple img {
       margin-right: 5px;
-      vertical-align: middle; }
-  .home .colour-boxes .colour-box.orange {
-    background-color: #FF9E14; }
-  .home .colour-boxes .colour-box.blue {
-    background-color: #3498DB; }
-  .home .colour-boxes .colour-box img {
-    margin-bottom: 5px;
-    display: inline-block; }
-  .home .colour-boxes .colour-box h2 {
-    margin-bottom: 15px;
-    font-size: 1.05rem; }
-  .home .colour-boxes .colour-box .caption {
-    margin-bottom: 15px; }
+      vertical-align: middle;
+      height: 24px;
+      max-width: 24px; }
 
 .home .about {
   padding: 0;
@@ -827,7 +888,7 @@ nav {
   color: #fff; }
   .home .about .caption {
     padding: 20px;
-    background-color: #02962e; }
+    background-color: #2AB07C; }
     .home .about .caption h2 {
       font-size: 2.3rem;
       margin-bottom: 15px; }
@@ -864,11 +925,17 @@ nav {
   .home .about {
     padding: 80px 50% 120px 20px; } }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  .home .clear-left {
-    clear: left; } }
+.contact .hero {
+  background-image: url("../img/backgrounds/contact-green.jpg");
+  background-position: 35% 40%; }
+  .contact .hero .caption {
+    text-align: left;
+    width: 48%;
+    max-width: 475px;
+    top: 33%;
+    left: 10px; }
 
+/* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .hero .container {

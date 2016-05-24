@@ -1,3 +1,10 @@
+/*
+   __________________________________________________________________
+  |                                                                  |
+  |                            Structure                             |
+  |__________________________________________________________________|
+
+*/
 html {
     position: relative;
     min-height: 100%;
@@ -156,7 +163,7 @@ nav {
 				&.active,
 				&:hover,
 				&:focus {
-					background-color: #fff;
+					background-color: #f2f2f2;
 					color: $grey;
 				}
 			}
@@ -164,12 +171,20 @@ nav {
 	}
 }
 
+/*
+   __________________________________________________________________
+  |                                                                  |
+  |                          Common Styles                           |
+  |__________________________________________________________________|
+
+*/
 .hero {
 	position: relative;
 	width: 100%;
 	min-height: 350px;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;	
+	margin-bottom: 10px;
 	.caption {
 		position: absolute;
 		top: 33%;
@@ -206,4 +221,100 @@ nav {
 	&:hover {
 		background-color: darken($green, 5%);
 	}
+}
+
+.colour-boxes {
+	.colour-box {
+		text-align: center;
+		margin-bottom: 10px;
+		padding: 20px 0;
+		color: #fff;
+		font-size: 0.9rem;
+		> p > img {
+			height: 47px;
+			max-width: 47px;
+			margin-bottom: 5px;
+			display: inline-block;
+		}
+		&.dark-blue {
+			background-color: $darkBlue;
+		}
+		&.red {
+			background-color: $red;
+		}
+		&.purple {
+			background-color: $purple;
+		}
+		&.orange {
+			background-color: $orange;
+		}
+		&.blue {
+			background-color: $blue;
+		}
+		&.emerald {
+			background-color: $emerald;
+		}
+		h2 {
+			margin-bottom: 15px;
+			font-size: 1.05rem;
+		}
+		.caption {
+			margin-bottom: 15px;
+		}
+	}		
+}
+
+form {
+	margin: 0 auto;
+	.input-group {
+		padding: 0 40px;
+		label {
+			display: block;
+			position: relative;
+			textarea {
+				resize: none;
+				overflow-y: auto;
+			}
+			input, textarea {
+				font-family: inherit;
+				display: block;
+				border: none;
+				padding: 20px;
+				width: 100%;
+				margin-bottom: 20px;
+				font-size: 18px;
+				outline: none;
+				transition: all 0.2s ease-in-out;
+
+				::placeholder {
+					transition: all 0.2s ease-in-out;
+					color: #999;
+					font: 18px Helvetica, Arial, sans-serif;
+				}
+
+				&:focus, &.populated {
+					padding-top: 28px;
+					padding-bottom: 12px;
+
+					::placeholder {
+						color: transparent;
+					}
+
+					+ span {
+						opacity: 1;
+						top: 10px;
+					}
+				}
+			}
+			span {
+				color: $emerald;
+				position: absolute;
+				top: 0px;
+				left: 20px;
+				opacity: 0;
+				transition: all 0.2s ease-in-out;
+			}
+		}
+		
+	}	
 }
