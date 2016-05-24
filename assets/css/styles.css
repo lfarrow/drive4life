@@ -826,7 +826,8 @@ nav {
     margin-bottom: 15px; }
 
 form {
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: left; }
   form .input-group {
     padding: 0 40px; }
     form .input-group label {
@@ -845,15 +846,44 @@ form {
         font-size: 18px;
         outline: none;
         transition: all 0.2s ease-in-out; }
-        form .input-group label input ::placeholder, form .input-group label textarea ::placeholder {
+        form .input-group label input::-webkit-input-placeholder, form .input-group label textarea::-webkit-input-placeholder {
           transition: all 0.2s ease-in-out;
           color: #999;
-          font: 18px Helvetica, Arial, sans-serif; }
+          opacity: 1; }
+        form .input-group label input:-moz-placeholder, form .input-group label textarea:-moz-placeholder {
+          transition: all 0.2s ease-in-out;
+          color: #999;
+          opacity: 1; }
+        form .input-group label input::-moz-placeholder, form .input-group label textarea::-moz-placeholder {
+          transition: all 0.2s ease-in-out;
+          color: #999;
+          opacity: 1; }
+        form .input-group label input:-ms-input-placeholder, form .input-group label textarea:-ms-input-placeholder {
+          transition: all 0.2s ease-in-out;
+          color: #999;
+          opacity: 1; }
+        form .input-group label input::placeholder, form .input-group label textarea::placeholder {
+          transition: all 0.2s ease-in-out;
+          color: #999;
+          opacity: 1; }
         form .input-group label input:focus, form .input-group label input.populated, form .input-group label textarea:focus, form .input-group label textarea.populated {
           padding-top: 28px;
           padding-bottom: 12px; }
-          form .input-group label input:focus ::placeholder, form .input-group label input.populated ::placeholder, form .input-group label textarea:focus ::placeholder, form .input-group label textarea.populated ::placeholder {
-            color: transparent; }
+          form .input-group label input:focus::-webkit-input-placeholder, form .input-group label input.populated::-webkit-input-placeholder, form .input-group label textarea:focus::-webkit-input-placeholder, form .input-group label textarea.populated::-webkit-input-placeholder {
+            color: transparent;
+            opacity: 0; }
+          form .input-group label input:focus:-moz-placeholder, form .input-group label input.populated:-moz-placeholder, form .input-group label textarea:focus:-moz-placeholder, form .input-group label textarea.populated:-moz-placeholder {
+            color: transparent;
+            opacity: 0; }
+          form .input-group label input:focus::-moz-placeholder, form .input-group label input.populated::-moz-placeholder, form .input-group label textarea:focus::-moz-placeholder, form .input-group label textarea.populated::-moz-placeholder {
+            color: transparent;
+            opacity: 0; }
+          form .input-group label input:focus:-ms-input-placeholder, form .input-group label input.populated:-ms-input-placeholder, form .input-group label textarea:focus:-ms-input-placeholder, form .input-group label textarea.populated:-ms-input-placeholder {
+            color: transparent;
+            opacity: 0; }
+          form .input-group label input:focus::placeholder, form .input-group label input.populated::placeholder, form .input-group label textarea:focus::placeholder, form .input-group label textarea.populated::placeholder {
+            color: transparent;
+            opacity: 0; }
           form .input-group label input:focus + span, form .input-group label input.populated + span, form .input-group label textarea:focus + span, form .input-group label textarea.populated + span {
             opacity: 1;
             top: 10px; }
@@ -864,6 +894,16 @@ form {
         left: 20px;
         opacity: 0;
         transition: all 0.2s ease-in-out; }
+  form button {
+    padding: 20px;
+    background-color: #20875f; }
+    form button:hover, form button:focus {
+      background-color: #1b7250; }
+    form button:disabled {
+      opacity: 0.6; }
+      form button:disabled:hover, form button:disabled:focus {
+        background-color: #20875f;
+        cursor: not-allowed; }
 
 .home .hero {
   background-image: url("../img/backgrounds/car-reverse-2.jpg");
