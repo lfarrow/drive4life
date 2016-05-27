@@ -269,6 +269,36 @@ form {
 	text-align: left;
 	.input-group {
 		padding: 0 40px;
+		.validation-message {
+			display: none;
+			position: relative;
+			border-radius: 20px;
+			padding: 10px 20px;
+			margin-bottom: 40px;
+			font-weight: bold;
+			color: #fff;
+			background-color: $red;
+		}
+		.validation-message:before {
+			content: "";
+			display: block; /* reduce the damage in FF3.0 */
+			position: absolute;
+			top: -15px;
+			left: 35%;
+			width: 0;
+			border-width: 0 15px 15px;
+			border-style: solid;
+			border-color: $red transparent;
+		}
+		&.invalid {
+			input, textarea {
+				border-bottom: 5px $red solid;
+				color: $red;
+			}
+			.validation-message {
+				display: inline-block;
+			}
+		}
 		label {
 			display: block;
 			position: relative;
@@ -280,13 +310,14 @@ form {
 				font-family: inherit;
 				display: block;
 				border: none;
+				border-bottom: 5px transparent solid;
 				padding: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 				font-size: 18px;
 				outline: none;
 				transition: all 0.2s ease-in-out;
-				
+
 				&::-webkit-input-placeholder {
 				    transition: all 0.2s ease-in-out;
 					color: #999;

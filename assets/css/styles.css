@@ -830,6 +830,31 @@ form {
   text-align: left; }
   form .input-group {
     padding: 0 40px; }
+    form .input-group .validation-message {
+      display: none;
+      position: relative;
+      border-radius: 20px;
+      padding: 10px 20px;
+      margin-bottom: 40px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #FF6961; }
+    form .input-group .validation-message:before {
+      content: "";
+      display: block;
+      /* reduce the damage in FF3.0 */
+      position: absolute;
+      top: -15px;
+      left: 35%;
+      width: 0;
+      border-width: 0 15px 15px;
+      border-style: solid;
+      border-color: #FF6961 transparent; }
+    form .input-group.invalid input, form .input-group.invalid textarea {
+      border-bottom: 5px #FF6961 solid;
+      color: #FF6961; }
+    form .input-group.invalid .validation-message {
+      display: inline-block; }
     form .input-group label {
       display: block;
       position: relative; }
@@ -840,6 +865,7 @@ form {
         font-family: inherit;
         display: block;
         border: none;
+        border-bottom: 5px transparent solid;
         padding: 20px;
         width: 100%;
         margin-bottom: 20px;

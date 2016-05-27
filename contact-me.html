@@ -94,21 +94,24 @@
 					<form action="">
 						<div class="input-group">
 							<label for="email">
-								<input type="email" id="email" name="email" placeholder="Email Address">
+								<input type="email" min="5" max="255" id="email" name="email" placeholder="Email Address">
 								<span>Email Address</span>
 							</label>
+							<p class="validation-message"></p>
 						</div>
 						<div class="input-group">
 							<label for="subject">
-								<input type="text" id="subject" name="subject" placeholder="Subject">
+								<input type="text" id="subject" min="3" max="255" name="subject" placeholder="Subject">
 								<span>Subject</span>
 							</label>
+							<p class="validation-message"></p>
 						</div>
 						<div class="input-group">
 							<label for="message">
-								<textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
+								<textarea name="message" id="message" min="5" max="5000" rows="10" placeholder="Message"></textarea>
 								<span>Message</span>
 							</label>
+							<p class="validation-message"></p>
 						</div>
 						<div class="input-group">
 							<button>Submit</button>
