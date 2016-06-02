@@ -44,13 +44,13 @@ function validateInput(element) {
 		valid = true,
 		message = '',
 		inputGroup = findAncestor(input, 'input-group'),
-		minLength = input.getAttribute('min'),
-		maxLength = input.getAttribute('max'),
+		minLength = input.getAttribute('minlength'),
+		maxLength = input.getAttribute('maxlength'),
 		required = input.getAttribute('required'),
 		type = input.getAttribute('type'),
 		emailRegex = /[^\s@]+@[^\s@]+\.[^\s@]+/;
-
-	if(required != null && inputValue != null) {
+		
+	if(required != null && (inputValue == null || inputValue == '')) {
     	valid = false;
     	message = 'Required field!';
     }

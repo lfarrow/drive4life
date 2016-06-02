@@ -748,7 +748,8 @@ nav {
       display: block;
       padding: 15px 5px;
       border-left: 0px transparent solid;
-      border-right: 0px transparent solid; }
+      border-right: 0px transparent solid;
+      background-color: transparent; }
       nav ul li a.active, nav ul li a:hover, nav ul li a:focus {
         background-color: #f2f2f2;
         color: #555E69; }
@@ -845,7 +846,8 @@ form {
       /* reduce the damage in FF3.0 */
       position: absolute;
       top: -15px;
-      left: 35%;
+      left: 50%;
+      transform: translateX(-50%);
       width: 0;
       border-width: 0 15px 15px;
       border-style: solid;
@@ -1049,7 +1051,8 @@ form {
         nav ul li a {
           padding: 15px 25px;
           border-left: 1px transparent solid;
-          border-right: 1px transparent solid; }
+          border-right: 1px transparent solid;
+          width: auto; }
           nav ul li a.active, nav ul li a:hover, nav ul li a:focus {
             color: #fff;
             background-color: #03982f;
