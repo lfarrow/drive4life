@@ -10,6 +10,10 @@
 		.caption {
 			position: relative;
 			font-size: 1.8rem;
+			width: 45%;
+			&.right {
+				float: right;
+			}
 			h1 {
 				font-size: 3rem;
 			}

@@ -761,6 +761,14 @@ nav {
   |__________________________________________________________________|
 
 */
+::selection {
+  background-color: #7ecced;
+  color: #fff;
+  padding: 10px; }
+
+main p {
+  margin-bottom: 15px; }
+
 .hero {
   position: relative;
   width: 100%;
@@ -776,10 +784,10 @@ nav {
     text-align: right;
     color: #fff;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75); }
+    .hero .caption .red {
+      color: #EB1D24; }
     .hero .caption h1 {
       font-size: 2.5rem; }
-      .hero .caption h1 .red {
-        color: #EB1D24; }
     .hero .caption p {
       margin-bottom: 15px; }
     .hero .caption .button {
@@ -790,7 +798,8 @@ nav {
   border-radius: 2px;
   color: #fff;
   background-color: #03C03C;
-  font-size: 1rem; }
+  font-size: 1rem;
+  vertical-align: middle; }
   .button img {
     height: 1em;
     vertical-align: middle; }
@@ -803,11 +812,13 @@ nav {
   padding: 20px 0;
   color: #fff;
   font-size: 0.9rem; }
-  .colour-boxes .colour-box > p > img {
-    height: 47px;
-    max-width: 47px;
-    margin-bottom: 5px;
-    display: inline-block; }
+  .colour-boxes .colour-box > p {
+    margin-bottom: 0; }
+    .colour-boxes .colour-box > p > img {
+      height: 47px;
+      max-width: 47px;
+      margin-bottom: 5px;
+      display: inline-block; }
   .colour-boxes .colour-box.dark-blue {
     background-color: #0070B8; }
   .colour-boxes .colour-box.red {
@@ -825,6 +836,8 @@ nav {
     font-size: 1.05rem; }
   .colour-boxes .colour-box .caption {
     margin-bottom: 15px; }
+  .colour-boxes .colour-box .button {
+    vertical-align: baseline; }
 
 form {
   margin: 0 auto;
@@ -936,9 +949,6 @@ form {
 .home .hero {
   background-image: url("../img/backgrounds/car-reverse-2.jpg");
   background-position: 55% 65%; }
-  .home .hero .caption {
-    top: 33%;
-    right: 10px; }
 
 .home .colour-boxes .colour-box {
   height: 200px; }
@@ -993,6 +1003,20 @@ form {
   .home .about {
     padding: 80px 50% 120px 20px; } }
 
+.about .hero {
+  background-image: url("../img/backgrounds/about-me-2.jpg");
+  background-position: 57%; }
+  .about .hero .caption {
+    width: 48%;
+    max-width: 475px; }
+
+.about main .row {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 25px 0; }
+  .about main .row p {
+    margin-bottom: 20px; }
+
 .contact .hero {
   background-image: url("../img/backgrounds/contact-green.jpg");
   background-position: 35% 40%; }
@@ -1010,7 +1034,10 @@ form {
     height: 460px; }
     .hero .container .caption {
       position: relative;
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      width: 45%; }
+      .hero .container .caption.right {
+        float: right; }
       .hero .container .caption h1 {
         font-size: 3rem; } }
 

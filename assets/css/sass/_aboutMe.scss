@@ -1,0 +1,18 @@
+.about {
+	.hero {
+		background-image: url('../img/backgrounds/about-me-2.jpg');
+		background-position: 57%;
+		.caption {
+			width: 48%;
+			max-width: 475px;
+		}			
+	}
+	main .row {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		margin: 25px 0;
+		p {
+			margin-bottom: 20px;
+		}
+	}
+}
