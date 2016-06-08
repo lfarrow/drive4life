@@ -1,0 +1,64 @@
+.areas {
+	.hero {
+		background-image: url('../img/backgrounds/map-1.jpg');
+		background-position: 35% 40%;
+		.caption {
+			width: 48%;
+			max-width: 475px;
+			top: 33%;
+			left: 10px;
+		}			
+	}
+	.areas-list {
+		text-align: center;
+		li {
+			display: inline-block;
+			padding: 10px 25px;	
+			height: 60px;
+			vertical-align: middle;
+			-webkit-animation-name: fadeInUp;
+		    animation-name: fadeInUp;
+		    -webkit-animation-duration: 1s;
+		    animation-duration: 1s;
+		    -webkit-animation-fill-mode: both;
+		    animation-fill-mode: both;
+		    @for $i from 1 through 44 {
+			    &:nth-child(n+#{$i}) {
+			    	-webkit-animation-delay: #{$i/50}s; /* Chrome, Safari, Opera */
+	    			animation-delay: #{$i/50}s;
+			    }
+			}
+			&:last-child {
+				background-color: $darkerGreen;
+				padding: 30px 25px;
+				height: auto;
+				color: #fff;
+			}
+		}
+
+	}
+	@-webkit-keyframes fadeInUp {
+	    0% {
+	        opacity: 0;
+	        -webkit-transform: translate3d(0, 50%, 0);
+	        transform: translate3d(0, 50%, 0);
+	    }
+	    100% {
+	        opacity: 1;
+	        -webkit-transform: none;
+	        transform: none;
+	    }
+	}
+	@keyframes fadeInUp {
+	    0% {
+	        opacity: 0;
+	        -webkit-transform: translate3d(0, 50%, 0);
+	        transform: translate3d(0, 50%, 0);
+	    }
+	    100% {
+	        opacity: 1;
+	        -webkit-transform: none;
+	        transform: none;
+	    }
+	}
+}

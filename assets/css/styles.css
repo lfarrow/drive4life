@@ -780,9 +780,11 @@ main p {
     top: 33%;
     right: 10px;
     font-size: 1.3rem;
-    text-align: right;
+    text-align: left;
     color: #fff;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75); }
+    .hero .caption.right {
+      text-align: right; }
     .hero .caption .red {
       color: #EB1D24; }
     .hero .caption h1 {
@@ -966,7 +968,8 @@ blockquote {
       content: close-quote;
       text-align: right; }
     blockquote .quote p {
-      padding: 0 15px; }
+      padding: 0 15px;
+      margin-bottom: 0 !important; }
   blockquote .author {
     text-align: right;
     line-height: 70px;
@@ -1066,11 +1069,234 @@ blockquote {
   background-image: url("../img/backgrounds/contact-green.jpg");
   background-position: 35% 40%; }
   .contact .hero .caption {
-    text-align: left;
     width: 48%;
     max-width: 475px;
     top: 33%;
     left: 10px; }
+
+.areas .hero {
+  background-image: url("../img/backgrounds/map-1.jpg");
+  background-position: 35% 40%; }
+  .areas .hero .caption {
+    width: 48%;
+    max-width: 475px;
+    top: 33%;
+    left: 10px; }
+
+.areas .areas-list {
+  text-align: center; }
+  .areas .areas-list li {
+    display: inline-block;
+    padding: 10px 25px;
+    height: 60px;
+    vertical-align: middle;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+    .areas .areas-list li:nth-child(n+1) {
+      -webkit-animation-delay: 0.02s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.02s; }
+    .areas .areas-list li:nth-child(n+2) {
+      -webkit-animation-delay: 0.04s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.04s; }
+    .areas .areas-list li:nth-child(n+3) {
+      -webkit-animation-delay: 0.06s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.06s; }
+    .areas .areas-list li:nth-child(n+4) {
+      -webkit-animation-delay: 0.08s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.08s; }
+    .areas .areas-list li:nth-child(n+5) {
+      -webkit-animation-delay: 0.1s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.1s; }
+    .areas .areas-list li:nth-child(n+6) {
+      -webkit-animation-delay: 0.12s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.12s; }
+    .areas .areas-list li:nth-child(n+7) {
+      -webkit-animation-delay: 0.14s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.14s; }
+    .areas .areas-list li:nth-child(n+8) {
+      -webkit-animation-delay: 0.16s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.16s; }
+    .areas .areas-list li:nth-child(n+9) {
+      -webkit-animation-delay: 0.18s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.18s; }
+    .areas .areas-list li:nth-child(n+10) {
+      -webkit-animation-delay: 0.2s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.2s; }
+    .areas .areas-list li:nth-child(n+11) {
+      -webkit-animation-delay: 0.22s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.22s; }
+    .areas .areas-list li:nth-child(n+12) {
+      -webkit-animation-delay: 0.24s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.24s; }
+    .areas .areas-list li:nth-child(n+13) {
+      -webkit-animation-delay: 0.26s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.26s; }
+    .areas .areas-list li:nth-child(n+14) {
+      -webkit-animation-delay: 0.28s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.28s; }
+    .areas .areas-list li:nth-child(n+15) {
+      -webkit-animation-delay: 0.3s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.3s; }
+    .areas .areas-list li:nth-child(n+16) {
+      -webkit-animation-delay: 0.32s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.32s; }
+    .areas .areas-list li:nth-child(n+17) {
+      -webkit-animation-delay: 0.34s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.34s; }
+    .areas .areas-list li:nth-child(n+18) {
+      -webkit-animation-delay: 0.36s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.36s; }
+    .areas .areas-list li:nth-child(n+19) {
+      -webkit-animation-delay: 0.38s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.38s; }
+    .areas .areas-list li:nth-child(n+20) {
+      -webkit-animation-delay: 0.4s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.4s; }
+    .areas .areas-list li:nth-child(n+21) {
+      -webkit-animation-delay: 0.42s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.42s; }
+    .areas .areas-list li:nth-child(n+22) {
+      -webkit-animation-delay: 0.44s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.44s; }
+    .areas .areas-list li:nth-child(n+23) {
+      -webkit-animation-delay: 0.46s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.46s; }
+    .areas .areas-list li:nth-child(n+24) {
+      -webkit-animation-delay: 0.48s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.48s; }
+    .areas .areas-list li:nth-child(n+25) {
+      -webkit-animation-delay: 0.5s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.5s; }
+    .areas .areas-list li:nth-child(n+26) {
+      -webkit-animation-delay: 0.52s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.52s; }
+    .areas .areas-list li:nth-child(n+27) {
+      -webkit-animation-delay: 0.54s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.54s; }
+    .areas .areas-list li:nth-child(n+28) {
+      -webkit-animation-delay: 0.56s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.56s; }
+    .areas .areas-list li:nth-child(n+29) {
+      -webkit-animation-delay: 0.58s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.58s; }
+    .areas .areas-list li:nth-child(n+30) {
+      -webkit-animation-delay: 0.6s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.6s; }
+    .areas .areas-list li:nth-child(n+31) {
+      -webkit-animation-delay: 0.62s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.62s; }
+    .areas .areas-list li:nth-child(n+32) {
+      -webkit-animation-delay: 0.64s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.64s; }
+    .areas .areas-list li:nth-child(n+33) {
+      -webkit-animation-delay: 0.66s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.66s; }
+    .areas .areas-list li:nth-child(n+34) {
+      -webkit-animation-delay: 0.68s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.68s; }
+    .areas .areas-list li:nth-child(n+35) {
+      -webkit-animation-delay: 0.7s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.7s; }
+    .areas .areas-list li:nth-child(n+36) {
+      -webkit-animation-delay: 0.72s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.72s; }
+    .areas .areas-list li:nth-child(n+37) {
+      -webkit-animation-delay: 0.74s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.74s; }
+    .areas .areas-list li:nth-child(n+38) {
+      -webkit-animation-delay: 0.76s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.76s; }
+    .areas .areas-list li:nth-child(n+39) {
+      -webkit-animation-delay: 0.78s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.78s; }
+    .areas .areas-list li:nth-child(n+40) {
+      -webkit-animation-delay: 0.8s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.8s; }
+    .areas .areas-list li:nth-child(n+41) {
+      -webkit-animation-delay: 0.82s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.82s; }
+    .areas .areas-list li:nth-child(n+42) {
+      -webkit-animation-delay: 0.84s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.84s; }
+    .areas .areas-list li:nth-child(n+43) {
+      -webkit-animation-delay: 0.86s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.86s; }
+    .areas .areas-list li:nth-child(n+44) {
+      -webkit-animation-delay: 0.88s;
+      /* Chrome, Safari, Opera */
+      animation-delay: 0.88s; }
+    .areas .areas-list li:last-child {
+      background-color: #02962e;
+      padding: 30px 25px;
+      height: auto;
+      color: #fff; }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
 
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
