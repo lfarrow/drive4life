@@ -183,7 +183,6 @@ nav {
 ::selection {
 	background-color: $selection;
 	color: #fff;
-	padding: 10px;
 }
 
 main p {
@@ -415,6 +414,59 @@ form {
 				background-color: darken($emerald, 10%);
 				cursor: not-allowed;
 			}
+		}
+	}
+}
+
+blockquote {
+	display: block;
+	quotes: "\201C" "\201D" "\2018" "\2019";
+	.quote {
+		background-color: $purple;
+		color: #fff;
+		padding: 25px 20px;		
+		margin-bottom: 20px; /* Make room for speech bubble pointer */
+		&:before, &:after {						
+			font-size: 4em;
+			line-height: 0.1em;
+			vertical-align: -0.4em;
+			display: inline-block;
+			width: 100%;
+		}
+		&:before {
+			content: open-quote;
+		}
+		&:after {			
+			content: close-quote;
+			text-align: right;
+		}
+		p {
+			padding: 0 15px;
+		}
+	}
+	.author {
+		text-align: right;
+		line-height: 70px;
+		height: 70px;
+		color: $grey;
+		.profile-image {
+			height: 70px;
+			width: 70px;
+			border-radius: 50%;
+			display: inline;
+			vertical-align: middle;
+			position: relative;			
+		}
+		&:before {
+			content: "";
+			display: block; /* reduce the damage in FF3.0 */
+			position: absolute;
+			right: 40px;
+			transform: translateY(-20px);
+			width: 0;
+			border-width: 20px 0 0 20px;
+			border-style: solid;
+			border-color: $purple transparent;
 		}
 	}
 }

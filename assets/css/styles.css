@@ -763,8 +763,7 @@ nav {
 */
 ::selection {
   background-color: #7ecced;
-  color: #fff;
-  padding: 10px; }
+  color: #fff; }
 
 main p {
   margin-bottom: 15px; }
@@ -945,6 +944,52 @@ form {
       form button:disabled:hover, form button:disabled:focus {
         background-color: #20875f;
         cursor: not-allowed; }
+
+blockquote {
+  display: block;
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+  blockquote .quote {
+    background-color: #966FD6;
+    color: #fff;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    /* Make room for speech bubble pointer */ }
+    blockquote .quote:before, blockquote .quote:after {
+      font-size: 4em;
+      line-height: 0.1em;
+      vertical-align: -0.4em;
+      display: inline-block;
+      width: 100%; }
+    blockquote .quote:before {
+      content: open-quote; }
+    blockquote .quote:after {
+      content: close-quote;
+      text-align: right; }
+    blockquote .quote p {
+      padding: 0 15px; }
+  blockquote .author {
+    text-align: right;
+    line-height: 70px;
+    height: 70px;
+    color: #555E69; }
+    blockquote .author .profile-image {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      display: inline;
+      vertical-align: middle;
+      position: relative; }
+    blockquote .author:before {
+      content: "";
+      display: block;
+      /* reduce the damage in FF3.0 */
+      position: absolute;
+      right: 40px;
+      transform: translateY(-20px);
+      width: 0;
+      border-width: 20px 0 0 20px;
+      border-style: solid;
+      border-color: #966FD6 transparent; }
 
 .home .hero {
   background-image: url("../img/backgrounds/car-reverse-2.jpg");
