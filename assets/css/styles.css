@@ -1333,9 +1333,6 @@ blockquote {
 
 .info .colour-boxes .colour-box {
   padding: 20px 10px; }
-  .info .colour-boxes .colour-box.blue {
-    height: 562px;
-    /* Make blue column always same size as green + purple */ }
   .info .colour-boxes .colour-box h2 {
     font-size: 1.8rem; }
   .info .colour-boxes .colour-box > p {
@@ -1351,6 +1348,12 @@ blockquote {
   .info .colour-boxes .colour-box > .button {
     display: inline-block;
     margin-top: 15px; }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .info .colour-boxes .colour-box .blue {
+    min-height: 562px;
+    /* Make blue column always same size as green + purple */ } }
 
 .stories .hero {
   background-image: url("../img/backgrounds/balloons-extended.jpg");

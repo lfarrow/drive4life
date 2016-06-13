@@ -11,9 +11,6 @@
 	.colour-boxes {
 		.colour-box {
 			padding: 20px 10px;
-			&.blue {
-				height: 562px; /* Make blue column always same size as green + purple */
-			}
 			h2 {
 				font-size: 1.8rem;
 			}
@@ -35,5 +32,12 @@
 				margin-top: 15px;
 			}
 		}		
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.info .colour-boxes .colour-box .blue {
+		min-height: 562px; /* Make blue column always same size as green + purple */
 	}
 }
