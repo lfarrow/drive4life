@@ -619,6 +619,14 @@ img {
   |__________________________________________________________________|
 
 */
+a {
+  color: #3498DB;
+  text-decoration: none;
+  border-bottom: 2px solid #3498DB;
+  transition: border ease-in-out 0.25s; }
+  a:hover, a:focus {
+    border-color: #3498DB; }
+
 html {
   position: relative;
   min-height: 100%; }
@@ -645,7 +653,8 @@ footer {
     footer .social-icons a {
       opacity: 0.75;
       margin: 0 10px;
-      display: inline-block; }
+      display: inline-block;
+      border: none; }
       footer .social-icons a:hover, footer .social-icons a:focus {
         opacity: 1; }
   footer .contact p {
@@ -675,6 +684,7 @@ header {
   padding: 10px 0;
   background-color: #03C03C; }
   header .logo {
+    border: none;
     display: inline-block; }
   header .menu-icon-container {
     background-color: #03C03C;
@@ -747,9 +757,12 @@ nav {
       width: 100%;
       display: block;
       padding: 15px 5px;
+      border: none;
       border-left: 0px transparent solid;
       border-right: 0px transparent solid;
-      background-color: transparent; }
+      color: #fff;
+      background-color: transparent;
+      transition: background-color 0.25s linear; }
       nav ul li a.active, nav ul li a:hover, nav ul li a:focus {
         background-color: #f2f2f2;
         color: #555E69; }
@@ -768,6 +781,10 @@ nav {
 main p {
   margin-bottom: 15px; }
 
+main img {
+  margin: 0 auto;
+  display: block; }
+
 .hero {
   position: relative;
   width: 100%;
@@ -778,12 +795,14 @@ main p {
   .hero .caption {
     position: absolute;
     top: 33%;
-    right: 10px;
+    left: 10px;
     font-size: 1.3rem;
     text-align: left;
     color: #fff;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75); }
     .hero .caption.right {
+      left: auto;
+      right: 10px;
       text-align: right; }
     .hero .caption .red {
       color: #EB1D24; }
@@ -795,6 +814,7 @@ main p {
       text-shadow: none; }
 
 .button {
+  border: none;
   padding: 0.3em 1em;
   border-radius: 2px;
   color: #fff;
@@ -803,14 +823,15 @@ main p {
   vertical-align: middle; }
   .button img {
     height: 1em;
-    vertical-align: middle; }
+    vertical-align: middle;
+    display: inline; }
   .button:hover {
     background-color: #03a734; }
 
 .colour-boxes .colour-box {
   text-align: center;
   margin-bottom: 10px;
-  padding: 20px 0;
+  padding: 20px 5px;
   color: #fff;
   font-size: 0.9rem; }
   .colour-boxes .colour-box > p {
@@ -832,8 +853,11 @@ main p {
     background-color: #3498DB; }
   .colour-boxes .colour-box.emerald {
     background-color: #2AB07C; }
+  .colour-boxes .colour-box h2, .colour-boxes .colour-box h3 {
+    margin-bottom: 15px; }
   .colour-boxes .colour-box h2 {
-    margin-bottom: 15px;
+    font-size: 1.2rem; }
+  .colour-boxes .colour-box h3 {
     font-size: 1.05rem; }
   .colour-boxes .colour-box .caption {
     margin-bottom: 15px; }
@@ -936,14 +960,14 @@ form {
         left: 20px;
         opacity: 0;
         transition: all 0.2s ease-in-out; }
-  form button {
+  form button, form input[type="submit"] {
     padding: 20px;
     background-color: #20875f; }
-    form button:hover, form button:focus {
+    form button:hover, form button:focus, form input[type="submit"]:hover, form input[type="submit"]:focus {
       background-color: #1b7250; }
-    form button:disabled {
+    form button:disabled, form input[type="submit"]:disabled {
       opacity: 0.6; }
-      form button:disabled:hover, form button:disabled:focus {
+      form button:disabled:hover, form button:disabled:focus, form input[type="submit"]:disabled:hover, form input[type="submit"]:disabled:focus {
         background-color: #20875f;
         cursor: not-allowed; }
 
@@ -999,7 +1023,8 @@ blockquote {
   background-position: 55% 65%; }
 
 .home .colour-boxes .colour-box {
-  height: 200px; }
+  height: 200px;
+  padding: 20px 0; }
   .home .colour-boxes .colour-box.purple {
     padding: 40px 0; }
     .home .colour-boxes .colour-box.purple img {
@@ -1298,6 +1323,43 @@ blockquote {
     -webkit-transform: none;
     transform: none; } }
 
+.info .hero {
+  background-image: url("../img/backgrounds/gearstick-extended.jpg");
+  background-position: 40% 57%; }
+  .info .hero .caption {
+    width: 48%;
+    max-width: 475px;
+    top: 25%; }
+
+.info .colour-boxes .colour-box {
+  padding: 20px 10px; }
+  .info .colour-boxes .colour-box.blue {
+    height: 562px;
+    /* Make blue column always same size as green + purple */ }
+  .info .colour-boxes .colour-box h2 {
+    font-size: 1.8rem; }
+  .info .colour-boxes .colour-box > p {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+    .info .colour-boxes .colour-box > p:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0; }
+  .info .colour-boxes .colour-box ul {
+    margin-bottom: 15px; }
+  .info .colour-boxes .colour-box > .button {
+    display: inline-block;
+    margin-top: 15px; }
+
+.stories .hero {
+  background-image: url("../img/backgrounds/balloons-extended.jpg");
+  background-position: 0% 0%; }
+
+.stories .caption {
+  width: 35%;
+  top: 25%; }
+
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
@@ -1314,6 +1376,8 @@ blockquote {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+  a {
+    border-color: transparent; }
   .hero .container {
     height: 610px; }
     .hero .container .caption {

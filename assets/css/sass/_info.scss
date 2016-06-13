@@ -1,0 +1,39 @@
+.info {
+	.hero {
+		background-image: url('../img/backgrounds/gearstick-extended.jpg');
+		background-position: 40% 57%;
+		.caption {
+			width: 48%;
+			max-width: 475px;
+			top: 25%;
+		}			
+	}
+	.colour-boxes {
+		.colour-box {
+			padding: 20px 10px;
+			&.blue {
+				height: 562px; /* Make blue column always same size as green + purple */
+			}
+			h2 {
+				font-size: 1.8rem;
+			}
+			> p {
+				padding-bottom: 30px;
+				margin-bottom: 30px;
+				border-bottom: 1px solid rgba(255,255,255,0.3);
+				&:last-of-type {
+					border-bottom: none;
+					padding-bottom: 0;
+					margin-bottom: 0;
+				}
+			}
+			ul {
+				margin-bottom: 15px;
+			}
+			> .button {
+				display: inline-block;
+				margin-top: 15px;
+			}
+		}		
+	}
+}
