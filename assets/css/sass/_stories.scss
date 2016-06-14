@@ -1,7 +1,16 @@
 .stories {
 	.hero {
 		background-image: url('../img/backgrounds/balloons-extended.jpg');
-		background-position: 0% 0%;	
+		background-position: 0% 0%;
+		z-index: 9999;	
+	}
+	.car {
+		display: none;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-48%);
+		z-index: 999;
 	}
 	.caption {
 		width: 35%;
@@ -94,7 +103,16 @@
 }
 
 @media only screen and (min-width : 992px) { /* Show road divider/timeline */
-	.stories blockquote {
+.stories {
+	.car {
+		display: block;
+	}
+	.quotes {
+		background-image: url('../img/backgrounds/road-background-small.fw.png');
+		background-repeat: repeat-y;
+		background-position: center;
+	}
+	blockquote {
 		width: 50%;
 		&:before {
 			top: -15px;
@@ -102,9 +120,7 @@
 			content: '';
 			position: absolute;
 			width: 20px;
-			background-image: url('../img/backgrounds/road-background.fw.png');
-			background-size: contain;
-			background-repeat: repeat-y;
+			
 		}
 		&:nth-child(odd) {
 			float: left;
@@ -139,4 +155,5 @@
 			bottom: 0;
 		}
 	}
+}
 }

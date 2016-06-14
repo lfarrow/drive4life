@@ -1415,7 +1415,16 @@ blockquote.emerald .author:before {
 
 .stories .hero {
   background-image: url("../img/backgrounds/balloons-extended.jpg");
-  background-position: 0% 0%; }
+  background-position: 0% 0%;
+  z-index: 9999; }
+
+.stories .car {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-48%);
+  z-index: 999; }
 
 .stories .caption {
   width: 35%;
@@ -1474,6 +1483,12 @@ blockquote.emerald .author:before {
 
 @media only screen and (min-width: 992px) {
   /* Show road divider/timeline */
+  .stories .car {
+    display: block; }
+  .stories .quotes {
+    background-image: url("../img/backgrounds/road-background-small.fw.png");
+    background-repeat: repeat-y;
+    background-position: center; }
   .stories blockquote {
     width: 50%; }
     .stories blockquote:before {
@@ -1481,10 +1496,7 @@ blockquote.emerald .author:before {
       bottom: -15px;
       content: '';
       position: absolute;
-      width: 20px;
-      background-image: url("../img/backgrounds/road-background.fw.png");
-      background-size: contain;
-      background-repeat: repeat-y; }
+      width: 20px; }
     .stories blockquote:nth-child(odd) {
       float: left;
       clear: both; }
