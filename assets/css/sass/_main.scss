@@ -209,6 +209,10 @@ main {
 	}
 }
 
+.text {
+	line-height: 1.5;
+}
+
 .hero {
 	position: relative;
 	width: 100%;
@@ -454,10 +458,8 @@ blockquote {
 	display: block;
 	quotes: "\201C" "\201D" "\2018" "\2019";
 	.quote {
-		background-color: $purple;
 		color: #fff;
 		padding: 25px 20px;		
-		margin-bottom: 20px; /* Make room for speech bubble pointer */
 		&:before, &:after {						
 			font-size: 4em;
 			line-height: 0.1em;
@@ -494,12 +496,89 @@ blockquote {
 			content: "";
 			display: block; /* reduce the damage in FF3.0 */
 			position: absolute;
+			width: 0;
+			border-style: solid;
+		}
+	}
+}
+
+blockquote {
+	&.pointer-bottom {
+		.quote {
+			margin-bottom: 20px; /* Make room for speech bubble pointer */
+		}
+		.author:before {
 			right: 40px;
 			transform: translateY(-20px);
-			width: 0;
 			border-width: 20px 0 0 20px;
-			border-style: solid;
+		}
+	}
+	&.pointer-right {
+		.quote {
+			margin-right: 20px; /* Make room for speech bubble pointer */
+		}
+		.author:before {
+			right: 5px;
+	    	transform: translateY(-57px);
+			border-width: 20px 20px 0 0;
+		}
+	}
+	&.pointer-left {
+		.quote {
+			margin-left: 20px; /* Make room for speech bubble pointer */
+		}
+		.author:before {
+			left: 5px;
+		    transform: translateY(-57px);
+		    border-width: 20px 0 0 20px;
+		}
+	}
+	&.purple {
+		.quote {
+			background-color: $purple;
+		}
+		.author:before {
 			border-color: $purple transparent;
+		}
+	}
+	&.dark-blue {
+		.quote {
+			background-color: $darkBlue;
+		}
+		.author:before {
+			border-color: $darkBlue transparent;
+		}
+	}
+	&.red {
+		.quote {
+			background-color: $red;
+		}
+		.author:before {
+			border-color: $red transparent;
+		}
+	}
+	&.orange {
+		.quote {
+			background-color: $orange;
+		}
+		.author:before {
+			border-color: $orange transparent;
+		}
+	}
+	&.blue {
+		.quote {
+			background-color: $blue;
+		}
+		.author:before {
+			border-color: $blue transparent;
+		}
+	}
+	&.emerald {
+		.quote {
+			background-color: $emerald;
+		}
+		.author:before {
+			border-color: $emerald transparent;
 		}
 	}
 }

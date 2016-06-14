@@ -7,4 +7,136 @@
 		width: 35%;
 		top: 25%;
 	}
+	blockquote {
+		margin-bottom: 30px;
+		position: relative;
+		.author {
+			line-height: 40px;
+			height: 40px;
+			padding: 0 60px;
+		}
+		.quote {
+			margin-right: 20px; /* Make room for speech bubble pointer */
+			margin-left: 20px; /* Make room for speech bubble pointer */
+			img {
+				padding: 10px 30px;
+			}
+		}
+		&:nth-child(odd) {
+			.author {
+				text-align: left;
+			}
+			.author:before {
+				right: 5px;
+		    	transform: translateY(-57px);
+				border-width: 20px 20px 0 0;
+			}
+		}
+		&:nth-child(even) {
+			.author {
+				text-align: right;
+			}
+			.author:before {
+				left: 5px;
+			    transform: translateY(-57px);
+			    border-width: 20px 0 0 20px;
+			}
+		}
+		&:nth-child(1n) {
+			.quote {
+				background-color: $purple;
+			}
+			.author:before {
+				border-color: $purple transparent;
+			}
+		}
+		&:nth-child(2n) {
+			.quote {
+				background-color: $darkBlue;
+			}
+			.author:before {
+				border-color: $darkBlue transparent;
+			}
+		}
+		&:nth-child(3n) {
+			.quote {
+				background-color: $red;
+			}
+			.author:before {
+				border-color: $red transparent;
+			}
+		}
+		&:nth-child(4n) {
+			.quote {
+				background-color: $orange;
+			}
+			.author:before {
+				border-color: $orange transparent;
+			}
+		}
+		&:nth-child(5n) {
+			.quote {
+				background-color: $blue;
+			}
+			.author:before {
+				border-color: $blue transparent;
+			}
+		}
+		&:nth-child(6n) {
+			.quote {
+				background-color: $emerald;
+			}
+			.author:before {
+				border-color: $emerald transparent;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : 992px) { /* Show road divider/timeline */
+	.stories blockquote {
+		width: 50%;
+		&:before {
+			top: -15px;
+			bottom: -15px;
+			content: '';
+			position: absolute;
+			width: 20px;
+			background-image: url('../img/backgrounds/road-background.fw.png');
+			background-size: contain;
+			background-repeat: repeat-y;
+		}
+		&:nth-child(odd) {
+			float: left;
+			clear: both;
+			.quote {
+				margin-right: 25px;
+			}
+			.author:before {
+				right: 10px;
+			}
+			&:before {				
+				right: -10px;				
+			}
+		}
+		&:nth-child(even) {
+			float: right;
+			clear: both;
+			.quote {
+				margin-left: 25px;
+			}
+			.author:before {
+				left: 10px;
+			}
+			&:before {
+				left: -10px;
+			}
+		}
+		&:first-child:before {
+			top: 0;
+		}
+		&:last-child:before {
+			bottom: 0;
+		}
+	}
 }
