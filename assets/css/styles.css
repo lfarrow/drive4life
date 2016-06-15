@@ -1439,13 +1439,14 @@ blockquote.emerald .author:before {
     line-height: 40px;
     height: 40px;
     padding: 0 60px; }
+  .stories blockquote img {
+    padding: 10px 30px;
+    max-height: 300px; }
   .stories blockquote .quote {
     margin-right: 20px;
     /* Make room for speech bubble pointer */
     margin-left: 20px;
     /* Make room for speech bubble pointer */ }
-    .stories blockquote .quote img {
-      padding: 10px 30px; }
   .stories blockquote:nth-child(odd) .author {
     text-align: left; }
   .stories blockquote:nth-child(odd) .author:before {

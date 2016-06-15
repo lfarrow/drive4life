@@ -26,12 +26,13 @@
 			height: 40px;
 			padding: 0 60px;
 		}
+		img {
+			padding: 10px 30px;
+			max-height: 300px;
+		}
 		.quote {
 			margin-right: 20px; /* Make room for speech bubble pointer */
 			margin-left: 20px; /* Make room for speech bubble pointer */
-			img {
-				padding: 10px 30px;
-			}
 		}
 		&:nth-child(odd) {
 			.author {
