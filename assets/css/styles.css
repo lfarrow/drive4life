@@ -627,6 +627,11 @@ a {
   a:hover, a:focus {
     border-color: #3498DB; }
 
+/* Remove iOS telephone styling */
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none; }
+
 html {
   position: relative;
   min-height: 100%; }
