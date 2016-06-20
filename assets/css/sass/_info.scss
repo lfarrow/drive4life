@@ -11,14 +11,11 @@
 	.colour-boxes {
 		.colour-box {
 			padding: 20px 10px;
-			&.blue {
-				min-height: 562px; /* Make blue column always same size as green + purple */
-			}
 			h2 {
 				font-size: 1.8rem;
 			}
-			> p {
-				padding-bottom: 30px;
+			.section {
+				padding-bottom: 15px;
 				margin-bottom: 30px;
 				border-bottom: 1px solid rgba(255,255,255,0.3);
 				&:last-of-type {

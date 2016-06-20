@@ -1399,16 +1399,13 @@ blockquote.emerald .author:before {
 
 .info .colour-boxes .colour-box {
   padding: 20px 10px; }
-  .info .colour-boxes .colour-box.blue {
-    min-height: 562px;
-    /* Make blue column always same size as green + purple */ }
   .info .colour-boxes .colour-box h2 {
     font-size: 1.8rem; }
-  .info .colour-boxes .colour-box > p {
-    padding-bottom: 30px;
+  .info .colour-boxes .colour-box .section {
+    padding-bottom: 15px;
     margin-bottom: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-    .info .colour-boxes .colour-box > p:last-of-type {
+    .info .colour-boxes .colour-box .section:last-of-type {
       border-bottom: none;
       padding-bottom: 0;
       margin-bottom: 0; }
