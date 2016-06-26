@@ -1361,10 +1361,12 @@ blockquote.emerald .author:before {
       /* Chrome, Safari, Opera */
       animation-delay: 0.88s; }
     .areas .areas-list li:last-child {
-      background-color: #02962e;
+      margin-top: 25px;
+      margin-bottom: 15px;
       padding: 30px 25px;
       height: auto;
-      color: #fff; }
+      border-top: 1px solid rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
 
 .areas .centre {
   text-align: center;
