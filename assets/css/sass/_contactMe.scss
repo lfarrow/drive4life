@@ -9,4 +9,10 @@
 			left: 10px;
 		}			
 	}
+	.colour-boxes {
+		.colour-box {
+			/* Fix annoying 2px difference between boxes */
+			min-height: 167px; 
+		}
+	}
 }
