@@ -1090,9 +1090,9 @@ blockquote.emerald .author:before {
 .home .colour-boxes .colour-box {
   height: 200px;
   padding: 20px 0; }
-  .home .colour-boxes .colour-box.purple {
+  .home .colour-boxes .colour-box.emerald {
     padding: 40px 0; }
-    .home .colour-boxes .colour-box.purple img {
+    .home .colour-boxes .colour-box.emerald img {
       margin-right: 5px;
       vertical-align: middle;
       height: 24px;
@@ -1104,7 +1104,7 @@ blockquote.emerald .author:before {
   color: #fff; }
   .home .about .caption {
     padding: 20px;
-    background-color: #2AB07C; }
+    background-color: #966FD6; }
     .home .about .caption h2 {
       font-size: 2.3rem;
       margin-bottom: 15px; }
