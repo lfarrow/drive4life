@@ -1132,7 +1132,10 @@ blockquote.emerald .author:before {
     display: flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; }
     .home .colour-boxes .col-md-12 {
       -webkit-box-ordinal-group: 2;
       -webkit-order: 1;
