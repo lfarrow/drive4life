@@ -1471,29 +1471,29 @@ blockquote.emerald .author:before {
     left: 5px;
     transform: translateY(-57px);
     border-width: 20px 0 0 20px; }
-  .stories blockquote:nth-child(1n) .quote {
+  .stories blockquote:nth-child(6n+1) .quote {
     background-color: #966FD6; }
-  .stories blockquote:nth-child(1n) .author:before {
+  .stories blockquote:nth-child(6n+1) .author:before {
     border-color: #966FD6 transparent; }
-  .stories blockquote:nth-child(2n) .quote {
+  .stories blockquote:nth-child(6n+2) .quote {
     background-color: #0070B8; }
-  .stories blockquote:nth-child(2n) .author:before {
+  .stories blockquote:nth-child(6n+2) .author:before {
     border-color: #0070B8 transparent; }
-  .stories blockquote:nth-child(3n) .quote {
+  .stories blockquote:nth-child(6n+3) .quote {
     background-color: #FF6961; }
-  .stories blockquote:nth-child(3n) .author:before {
+  .stories blockquote:nth-child(6n+3) .author:before {
     border-color: #FF6961 transparent; }
-  .stories blockquote:nth-child(4n) .quote {
+  .stories blockquote:nth-child(6n+4) .quote {
     background-color: #FF9E14; }
-  .stories blockquote:nth-child(4n) .author:before {
+  .stories blockquote:nth-child(6n+4) .author:before {
     border-color: #FF9E14 transparent; }
-  .stories blockquote:nth-child(5n) .quote {
+  .stories blockquote:nth-child(6n+5) .quote {
     background-color: #3498DB; }
-  .stories blockquote:nth-child(5n) .author:before {
+  .stories blockquote:nth-child(6n+5) .author:before {
     border-color: #3498DB transparent; }
-  .stories blockquote:nth-child(6n) .quote {
+  .stories blockquote:nth-child(6n+6) .quote {
     background-color: #2AB07C; }
-  .stories blockquote:nth-child(6n) .author:before {
+  .stories blockquote:nth-child(6n+6) .author:before {
     border-color: #2AB07C transparent; }
 
 @media only screen and (min-width: 992px) {
