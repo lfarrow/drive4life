@@ -18,7 +18,29 @@
 		width: 35%;
 		top: 25%;
 	}
+	.loading-spinner-container {
+	    text-align: center;
+	    margin: 20px 0;
+	}
+	.loading-spinner {
+		content: "";
+	    display: inline-block;
+	    width: 50px;
+	    height: 50px;
+	    z-index: 1;
+	    border-radius: 50%;
+	    border: 2px solid $emerald;
+	    border-left-color: transparent;
+	    background: transparent;
+	    animation: rotate 1s infinite linear, colorchange 5s infinite linear;
+	}
 	blockquote {
+		&.blockquote-template {
+			display: none;
+			height: 0;
+			width: 0;
+			opacity: 0;
+		}
 		margin-bottom: 30px;
 		position: relative;
 		.author {
@@ -159,4 +181,40 @@
 		}
 	}
 }
+}
+
+@keyframes rotate {	
+	0% {
+	    transform: rotate(0deg);
+	}
+	100% {
+	    transform: rotate(360deg);
+	}
+}
+
+@keyframes colorchange {
+	0%   {
+		border-color: $emerald;
+	    border-left-color: transparent;
+	}
+	20%  {
+		border-color: $darkBlue;
+	    border-left-color: transparent;
+	}
+	40%  {
+		border-color: $purple;
+	    border-left-color: transparent;
+	}
+	60%  {
+		border-color: $red;
+	    border-left-color: transparent;
+	}
+	80% {
+		border-color: $orange;
+	    border-left-color: transparent;
+	}
+	100% {
+		border-color: $emerald;
+	    border-left-color: transparent;
+	}
 }

@@ -1,10 +1,11 @@
-var gulp = require('gulp');
-var concat = require("gulp-concat");
-var sass = require('gulp-sass');
-var watch = require('gulp-watch');
-var autoprefixer = require('gulp-autoprefixer');
-var rename = require('gulp-rename');
-var minifyCSS = require('gulp-minify-css');
+var gulp = require('gulp'),
+	concat = require("gulp-concat"),
+	sass = require('gulp-sass'),
+	watch = require('gulp-watch'),
+	autoprefixer = require('gulp-autoprefixer'),
+	rename = require('gulp-rename'),
+	minifyCSS = require('gulp-minify-css'),
+	connect = require('gulp-connect');
 
 /*
 	Sass
@@ -12,19 +13,30 @@ var minifyCSS = require('gulp-minify-css');
 gulp.task('styles', function() {
 	gulp.src('assets/css/sass/styles.scss')
 		.pipe(sass().on('error', sass.logError))
-		// .pipe(autoprefixer('last 6 versions'))
-		.pipe(gulp.dest('assets/css/'));
+		.pipe(autoprefixer('last 100 versions'))
+		.pipe(gulp.dest('assets/css/'))
+		.pipe(connect.reload());
 	gulp.src('assets/css/sass/styles.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(minifyCSS())
-		// .pipe(autoprefixer('last 6 versions'))
+		.pipe(autoprefixer('last 100 versions'))
         .pipe(rename('styles.min.css'))
-		.pipe(gulp.dest('assets/css/'));
+		.pipe(gulp.dest('assets/css/'))
+		.pipe(connect.reload());
 });
 
 gulp.task('watchScss', function(){
 	gulp.watch('assets/css/sass/**/*.scss', ['styles']);
 });
 
+/*
+	Webserver
+*/ 
+gulp.task('connect', function() {
+  connect.server({
+    livereload: true,
+    port: 8000
+  });
+});
 
-gulp.task('default', ['styles', 'watchScss'], function(){});
+gulp.task('default', ['styles', 'watchScss', 'connect'], function(){});
