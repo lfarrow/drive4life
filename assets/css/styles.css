@@ -1643,14 +1643,14 @@ blockquote.emerald .author:before {
   top: 25%; }
 
 .stories .loading-spinner-container {
-  text-align: center;
-  margin: 20px 0; }
+  text-align: center; }
 
 .stories .loading-spinner {
   content: "";
   display: inline-block;
   width: 50px;
   height: 50px;
+  margin: 50px 0;
   z-index: 1;
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
@@ -1735,7 +1735,8 @@ blockquote.emerald .author:before {
   .stories .quotes {
     background-image: url("../img/backgrounds/road-background-small.fw.png");
     background-repeat: repeat-y;
-    background-position: center; }
+    background-position: center;
+    min-height: 0; }
   .stories blockquote {
     width: 50%; }
     .stories blockquote:before {

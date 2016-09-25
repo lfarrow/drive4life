@@ -49,7 +49,6 @@ function getPhotos() {
 	page = page - 1;
 
 	makeRequest(photosetsBaseUrl, function(data) {
-		totalPages = data.photoset.pages;
 		getDescriptions(data);
 	},
 	function(error) {
@@ -89,6 +88,8 @@ function attachDescriptions() {
 }
 
 function appendQuotes() {
+	photoBatch.reverse();
+	
 	for (var i = 0; i < photoBatch.length; i++) {
 		var $newQuote = $template.clone();
 
