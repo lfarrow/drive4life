@@ -1,5 +1,5 @@
 /* Config Variables */
-var photosetsBaseUrl = 	"https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=664143ad8b5f27abb6825680945c8b85&user_id=141809452%40N02&extras=url_o&format=json",
+var photosetsBaseUrl = 	"https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=664143ad8b5f27abb6825680945c8b85&user_id=141809452%40N02&extras=url_m&format=json",
 	photoBaseUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=664143ad8b5f27abb6825680945c8b85&format=json",
 	photosetId = '72157674243645195',
 	perPage = 3,
@@ -97,13 +97,11 @@ function appendQuotes() {
 		$newQuote.removeClass('blockquote-template');
 
 		$newQuote.find('p').html(photoBatch[i].description);
-		$newQuote.find('img').attr('src', photoBatch[i].url_o);
+		$newQuote.find('img').attr('src', photoBatch[i].url_m);
 		$newQuote.find('.author').html(photoBatch[i].title);
 
 		$container.append($newQuote);
 	}
-
-	photoBatch.length = photoInfoBatch.length = 0;
 
 	loading = false;
 }

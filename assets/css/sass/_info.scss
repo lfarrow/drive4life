@@ -34,3 +34,53 @@
 		}		
 	}
 }
+
+.paypal__section {
+	position: relative;
+
+	h2 {
+		margin-bottom: 5px!important;
+	}
+
+	small {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+.paypal-form {
+
+	&__label {
+		display: block;
+		margin: 0 auto 5px;
+		text-align: center;
+	}
+
+	&__select {
+		border: none;
+		border-radius: 0;
+		display: block;
+		font-size: 0.9rem;
+		margin: 0 auto;
+		min-width: 80%;
+		padding: 10px 5px;
+	}
+
+	&__submit {
+		display: block;
+		margin: 10px auto 0;
+		padding: 10px 25px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__logo {
+		height: 45px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 45px;
+	}
+}

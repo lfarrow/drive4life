@@ -1025,16 +1025,6 @@ form {
         -moz-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out; }
-  form button, form input[type="submit"] {
-    padding: 20px;
-    background-color: #20875f; }
-    form button:hover, form button:focus, form input[type="submit"]:hover, form input[type="submit"]:focus {
-      background-color: #1b7250; }
-    form button:disabled, form input[type="submit"]:disabled {
-      opacity: 0.6; }
-      form button:disabled:hover, form button:disabled:focus, form input[type="submit"]:disabled:hover, form input[type="submit"]:disabled:focus {
-        background-color: #20875f;
-        cursor: not-allowed; }
 
 blockquote {
   display: block;
@@ -1219,11 +1209,11 @@ blockquote.emerald .author:before {
     padding: 80px 50% 120px 20px; } }
 
 .about .hero {
-  background-image: url("../img/backgrounds/about-me-2.jpg");
-  background-position: 57%; }
+  background-image: url("../img/backgrounds/about-me-new.jpg");
+  background-position: 25% 70%; }
   .about .hero .caption {
-    width: 48%;
-    max-width: 475px; }
+    width: 45%;
+    max-width: 415px; }
 
 .about main .row {
   margin: 25px 0; }
@@ -1618,6 +1608,44 @@ blockquote.emerald .author:before {
   .info .colour-boxes .colour-box > .button {
     display: inline-block;
     margin-top: 15px; }
+
+.paypal__section {
+  position: relative; }
+  .paypal__section h2 {
+    margin-bottom: 5px !important; }
+  .paypal__section small {
+    display: block;
+    margin-bottom: 10px; }
+
+.paypal-form__label {
+  display: block;
+  margin: 0 auto 5px;
+  text-align: center; }
+
+.paypal-form__select {
+  border: none;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  display: block;
+  font-size: 0.9rem;
+  margin: 0 auto;
+  min-width: 80%;
+  padding: 10px 5px; }
+
+.paypal-form__submit {
+  display: block;
+  margin: 10px auto 0;
+  padding: 10px 25px; }
+  .paypal-form__submit:hover {
+    cursor: pointer; }
+
+.paypal-form__logo {
+  height: 45px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45px; }
 
 .stories .hero {
   background-image: url("../img/backgrounds/balloons-extended.jpg");

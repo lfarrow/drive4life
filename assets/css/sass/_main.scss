@@ -444,20 +444,20 @@ form {
 			}
 		}		
 	}	
-	button, input[type="submit"] {
-		padding: 20px;
-		background-color: darken($emerald, 10%);
-		&:hover, &:focus {
-			background-color: darken($emerald, 15%);
-		}
-		&:disabled {
-			opacity: 0.6;
-			&:hover, &:focus {
-				background-color: darken($emerald, 10%);
-				cursor: not-allowed;
-			}
-		}
-	}
+	// button, input[type="submit"] {
+	// 	padding: 20px;
+	// 	background-color: darken($emerald, 10%);
+	// 	&:hover, &:focus {
+	// 		background-color: darken($emerald, 15%);
+	// 	}
+	// 	&:disabled {
+	// 		opacity: 0.6;
+	// 		&:hover, &:focus {
+	// 			background-color: darken($emerald, 10%);
+	// 			cursor: not-allowed;
+	// 		}
+	// 	}
+	// }
 }
 
 blockquote {
