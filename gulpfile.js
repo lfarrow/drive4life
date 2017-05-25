@@ -5,7 +5,8 @@ var gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	rename = require('gulp-rename'),
 	minifyCSS = require('gulp-minify-css'),
-	connect = require('gulp-connect');
+	connect = require('gulp-connect')
+	sitemap = require('gulp-sitemap');;
 
 /*
 	Sass
@@ -39,4 +40,14 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('default', ['styles', 'watchScss', 'connect'], function(){});
+gulp.task('sitemap', function () {
+    gulp.src('*.html', {
+            read: false
+        })
+        .pipe(sitemap({
+            siteUrl: 'http://www.drive4life.org.uk'
+        }))
+        .pipe(gulp.dest('./'));
+});
+
+gulp.task('default', ['styles', 'watchScss', 'connect', 'sitemap'], function(){});
